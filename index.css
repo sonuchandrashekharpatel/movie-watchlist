@@ -1,0 +1,217 @@
+body {
+    margin: 0;
+    background-color: #0c0c3f;
+    color: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+h1, movie-title {
+    font-family: "Bebas neue", sans-serif;
+}
+
+.container {
+    width: 600px;
+    height: 95vh;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px #000;
+    margin: 20px auto;
+    background-color: #000;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/background-image.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top 22% left 100%;
+    height: 200px;
+}
+
+main {
+    height: calc(95vh - 200px)
+}
+
+.my-watchlist {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-family: "poppins", sans-serif;
+    background: whitesmoke;
+    padding: 5px 10px;
+    border-radius: 4px;
+    opacity: 50%;
+}
+
+a:active {
+    padding: 4px 8px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.padding {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.search-bar  {
+    display: flex ;
+    width: 90%;
+    height: 40px;
+    margin: -20px auto;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+
+}
+
+input, .search-bar {
+    background: #2e2e2f;
+}
+
+.search-bar > div {
+    padding: 10px;
+}
+
+i {
+    margin-right: 5px;
+}
+
+input {
+    border: none;
+    padding: 5px 10px;
+    color: #f5eeee;
+    font-size: 16px;
+    outline: none;
+    
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+.wait {
+    cursor: wait;
+}
+
+
+button:hover, a:hover {
+    background-color: green;
+}
+
+button:active {
+    background-color: saddlebrown;
+}
+
+.search-btn {
+    background: #4b4b4b;
+    color: #fff;
+    height: 100%;
+    padding: 10px 40px;
+    font-weight: 700;
+    font-size: 18px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+}
+
+.movie-section, .movie-placeholder {
+    height: 100%;
+}
+
+.movie-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-txt {
+    color: #2e2e2f;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ================================== */
+.movie-section {
+    margin-top: 40px;
+}
+
+.movie,
+.movie-info,
+.info-top,
+.info-middle,
+.add-watchlist {
+    display: flex;
+}
+
+.movie p, .title {
+    margin: 0;
+}
+
+.movie-info {
+    margin-left: 15px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.poster {
+    width: 100px;
+    height: 150px;
+}
+
+.star-icon {
+    width: 10px;
+    height: 10px;
+}
+
+.info-top {
+    align-items: center;
+    gap: 10px;
+}
+
+.info-middle {
+    gap: 20px;
+}
+
+h2.title {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.movie-info p {
+    font-weight: 400;
+}
+
+.info-top p, .info-middle {
+    font-size: 12px;
+}
+
+.add-watchlist {
+    align-items: center;
+    gap: 5px;
+}
+
+.plus-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.plot {
+    font-size: 14px;
+}
+
+hr {
+    height: 2px;
+    border:none;
+    background-color: #2c2c2c;
+    margin-top: 20px;
+}
