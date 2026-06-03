@@ -17,7 +17,7 @@ async function handleSearch() {
 
     try {
         if(movieInput.value !== "") {
-            const res = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&t=${movieInput.value}`)
+            const res = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&t=${movieInput.value}`)
             const data = await res.json()
     
             if(data.Response === "False") {
@@ -42,7 +42,7 @@ document.addEventListener("click", async (e) => {
     if(e.target.classList.contains("add-btn")){
         const movieId = e.target.dataset.movieId
         try {
-            const res = await fetch(`http://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`)
+            const res = await fetch(`https://www.omdbapi.com/?apikey=${apiKey}&i=${movieId}`)
             if(!res.ok) {
                 throw new Error("Something wnet wrong.")
             }
