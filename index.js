@@ -26,12 +26,6 @@ async function handleSearch() {
             console.log(data)
             searchBtn.classList.remove("wait")
             movieEl.innerHTML = getMovieHtml(data)
-            // console.log(data.Poster)
-            // console.log(data.Title)
-            // console.log(data.imdbRating)
-            // console.log(data.Runtime)
-            // console.log(data.Genre)
-            // console.log(data.Plot)
         } else {
             searchBtn.classList.remove("wait")
             placeholder.innerHTML = "<p>Unable to find what you're looking for. Please try another search.</p>"
