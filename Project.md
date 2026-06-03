@@ -1,4 +1,3 @@
-
 # Project Requirements:
 
 1. Two pages - index.html and watchlist.html.

@@ -11,7 +11,7 @@ h1, movie-title {
 
 .container {
     width: 600px;
-    height: 95vh;
+    /* height: 95vh; */
     border: 2px solid #808080;
     border-radius: 5px;
     box-shadow: 4px 4px 10px #000;
@@ -27,11 +27,7 @@ header {
     height: 200px;
 }
 
-main {
-    height: calc(95vh - 200px)
-}
-
-.my-watchlist {
+.my-watchlist, .back-to-search {
     text-decoration: none;
     color: #000;
     font-weight: bold;
@@ -42,7 +38,7 @@ main {
     opacity: 50%;
 }
 
-a:active {
+.my-watchlist:active, .back-to-search:active {
     padding: 4px 8px;
 }
 
@@ -121,10 +117,6 @@ button:active {
 
 }
 
-.movie-section, .movie-placeholder {
-    height: 100%;
-}
-
 .movie-placeholder {
     display: flex;
     flex-direction: column;
@@ -140,14 +132,15 @@ button:active {
 
 /* ================================== */
 .movie-section {
-    margin-top: 40px;
+    margin: 40px 0 60px 0;
 }
 
 .movie,
 .movie-info,
 .info-top,
 .info-middle,
-.add-watchlist {
+.add-watchlist,
+.ph-bottom {
     display: flex;
 }
 
@@ -198,7 +191,7 @@ h2.title {
     gap: 5px;
 }
 
-.plus-btn {
+.add-btn, .remove-btn {
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -213,5 +206,24 @@ hr {
     height: 2px;
     border:none;
     background-color: #2c2c2c;
-    margin-top: 20px;
+    margin: 20px 0;
+}
+
+.add-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.ph-bottom {
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.wl-ph-p {
+    margin: 0
+}
+
+.ph-a:hover {
+    background: none;
 }
